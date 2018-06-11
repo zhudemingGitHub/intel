@@ -8,7 +8,7 @@ ci:
   - cd /tmp/alauda/app
   - pwd && ls -al
   - mvn package
-  - cp Dockerfile $ALAUDACI_DEST_DIR/Dockerfile
+  - cp Dockerfile $ALAUDACI_DEST_DIR/target/Dockerfile
   - mkdir -p $ALAUDACI_DEST_DIR/target/
   - cp target/*.jar  $ALAUDACI_DEST_DIR/target/
 #  - sleep 60
